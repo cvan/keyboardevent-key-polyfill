@@ -1,4 +1,4 @@
-# event-key-polyfill
+# keyboardevent-key-polyfill
 
 Polyfill for `KeyboardEvent.prototype.key`.
 
