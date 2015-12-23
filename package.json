@@ -1,6 +1,6 @@
 {
   "name": "keyboardevent-key-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "polyfill for `KeyboardEvent.prototype.key`",
   "main": "index.js",
   "author": {
