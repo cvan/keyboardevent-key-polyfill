@@ -88,12 +88,8 @@
   }
 
   function polyfill () {
-    if (!('KeyboardEvent' in window)) {
-      return false;
-    }
-
-    var testKeyboardEvent = new KeyboardEvent('keydown');
-    if ('key' in testKeyboardEvent) {
+    if (!('KeyboardEvent' in window) ||
+        'key' in KeyboardEvent.prototype) {
       return false;
     }
 
