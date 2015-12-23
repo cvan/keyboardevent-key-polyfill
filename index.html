@@ -21,6 +21,8 @@
     <script src="index.js"></script>
     <script>
 
+      keyboardeventKeyPolyfill.polyfill();
+
       // Don't try `keypress`.
       document.body.addEventListener('keydown', function (e) {
         var msg = (e.which || e.keyCode) + ' → ' + e.key;
