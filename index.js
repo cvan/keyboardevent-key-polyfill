@@ -103,7 +103,9 @@
         }
 
         return key;
-      }
+      },
+      enumerable: true,
+      configurable: true 
     };
     Object.defineProperty(KeyboardEvent.prototype, 'key', proto);
     return proto;
