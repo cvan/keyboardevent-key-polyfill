@@ -87,6 +87,10 @@
     letter = String.fromCharCode(i);
     keyboardeventKeyPolyfill.keys[i] = [letter.toLowerCase(), letter.toUpperCase()];
   }
+  for (i = 97; i < 123; i++) {
+    letter = String.fromCharCode(i);
+    keyboardeventKeyPolyfill.keys[i] = [letter.toLowerCase(), letter.toUpperCase()];
+  }
 
   function polyfill () {
     if (!('KeyboardEvent' in window) ||
