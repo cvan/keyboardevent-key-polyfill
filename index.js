@@ -21,6 +21,7 @@
       29: 'NonConvert',
       30: 'Accept',
       31: 'ModeChange',
+      32: ' ',
       33: 'PageUp',
       34: 'PageDown',
       35: 'End',
