@@ -48,6 +48,11 @@
       57: ['9', '('],
       91: 'OS',
       93: 'ContextMenu',
+      106: '*',
+      107: '+',
+      109: '-',
+      110: '.',
+      111: '/',
       144: 'NumLock',
       145: 'ScrollLock',
       181: 'VolumeMute',
@@ -86,6 +91,12 @@
   for (i = 65; i < 91; i++) {
     letter = String.fromCharCode(i);
     keyboardeventKeyPolyfill.keys[i] = [letter.toLowerCase(), letter.toUpperCase()];
+  }
+
+  // Numbers on numeric keyboard.
+  for (i = 96; i < 106; i++) {
+    letter = String.fromCharCode(i - 48);
+    keyboardeventKeyPolyfill.keys[i] = letter;
   }
 
   function polyfill () {
