@@ -89,8 +89,9 @@
   }
 
   function polyfill () {
+    var isEdgeOrIE = (navigator.userAgent.indexOf("MSIE ") > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./) || navigator.userAgent.indexOf("Edge/") > 0);
     if (!('KeyboardEvent' in window) ||
-        'key' in KeyboardEvent.prototype) {
+        ('key' in KeyboardEvent.prototype && !isEdgeOrIE)) {
       return false;
     }
 
