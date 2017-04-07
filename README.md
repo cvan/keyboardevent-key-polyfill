@@ -2,7 +2,7 @@
 
 Polyfill for `KeyboardEvent.prototype.key`.
 
-Firefox has already shipped with this for a while, but this will normalise it for other browsers (e.g., Chrome).
+> **NOTE:** All major browsers [now support `KeyboardEvent.prototype.key`](http://caniuse.com/#feat=keyboardevent-key). Firefox already shipped with this for a while; recent versions of Edge, Chrome, and Safari also now have shipped support. This will still enable `KeyboardEvent.prototype.key` in environments where it may not yet be available.
 
 
 ## Example
