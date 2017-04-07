@@ -7,7 +7,7 @@
     "name": "Chris Van",
     "url": "https://twitter.com/cvanw/"
   },
-  "license": "MIT",
+  "license": "CC0-1.0",
   "homepage": "https://github.com/cvan/keyboardevent-key-polyfill/",
   "repository": "cvan/keyboardevent-key-polyfill",
   "bugs": {
