@@ -52,7 +52,7 @@ Install from [npm](https://www.npmjs.com/package/keyboardevent-key-polyfill):
 npm install keyboardevent-key-polyfill
 ```
 
-Then require the CommonJS module for use with Browserify/WebPack:
+Then require the CommonJS module for use with [Browserify](http://browserify.org)/[webpack](https://webpack.js.org/):
 
 ```js
 require('keyboardevent-key-polyfill').polyfill();
@@ -60,4 +60,4 @@ require('keyboardevent-key-polyfill').polyfill();
 
 ## License
 
-[MIT](LICENCSE)
+[MIT](LICENSE)
