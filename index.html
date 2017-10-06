@@ -21,17 +21,17 @@
     <footer id="footer"></footer>
     <script src="index.js"></script>
     <script>
+      (function () {
+        window.keyboardeventKeyPolyfill.polyfill();
 
-      keyboardeventKeyPolyfill.polyfill();
-
-      // Don't try `keypress`.
-      document.body.addEventListener('keydown', function (e) {
-        var msg = (e.which || e.keyCode) + ' → ' + '<code>' + e.key + '</code>';
-        console.log(msg);
-        main.innerHTML += '<p>' + msg + '</p>';
-        footer.scrollIntoView();
-      });
-
+        // Don't try `keypress`.
+        document.body.addEventListener('keydown', function (e) {
+          var msg = (e.which || e.keyCode) + ' → ' + '<code>' + e.key + '</code>';
+          console.log(msg);
+          main.innerHTML += '<p>' + msg + '</p>';
+          footer.scrollIntoView();
+        });
+      })();
     </script>
   </body>
 </html>
