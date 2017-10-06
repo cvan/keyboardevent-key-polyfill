@@ -7,6 +7,7 @@
       body { font: 2em monospace; }
       .main { margin: 2em 10%; }
       p { color: #333; }
+      code { background: whitesmoke; white-space: pre; padding: 0.1em 0.5em; }
       .projectName { background: yellow; color: #666; display: inline; font-size: 1.5em; font-weight: 300; padding: .2em .4em; }
       .projectName b { color: #000; font-weight: 600; }
       .directions { color: #999; font-style: italic; margin-top: 1.5em; }
@@ -25,7 +26,7 @@
 
       // Don't try `keypress`.
       document.body.addEventListener('keydown', function (e) {
-        var msg = (e.which || e.keyCode) + ' → ' + e.key;
+        var msg = (e.which || e.keyCode) + ' → ' + '<code>' + e.key + '</code>';
         console.log(msg);
         main.innerHTML += '<p>' + msg + '</p>';
         footer.scrollIntoView();
