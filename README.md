@@ -38,6 +38,12 @@ Just drop the script on your page and call the `polyfill` method.
 <script>keyboardeventKeyPolyfill.polyfill();</script>
 ```
 
+You can also include it via CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/keyboardevent-key-polyfill@latest/index.min.js"></script>
+```
+
 If you're using AMD:
 
 ```js
